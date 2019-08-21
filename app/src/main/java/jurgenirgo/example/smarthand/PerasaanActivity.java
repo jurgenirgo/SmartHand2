@@ -22,7 +22,7 @@ public class PerasaanActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        recyclerView.setAdapter(new AbjadAdapter(this, getdata()));
+        recyclerView.setAdapter(new PerasaanAdapter(this, getdata()));
     }
 
     public ArrayList<PerasaanModel> getdata() {

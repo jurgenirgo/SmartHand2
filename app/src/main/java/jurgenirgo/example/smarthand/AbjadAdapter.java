@@ -61,7 +61,7 @@ public class AbjadAdapter extends RecyclerView.Adapter<AbjadAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imgabjad);
+            imageView = itemView.findViewById(R.id.imgperasaan);
         }
     }
 }
