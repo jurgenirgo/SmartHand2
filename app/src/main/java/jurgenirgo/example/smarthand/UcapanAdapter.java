@@ -11,14 +11,14 @@ import android.widget.ImageView;
 
 import java.util.ArrayList;
 
-import jurgenirgo.example.smarthand.Model.AbjadModel;
+import jurgenirgo.example.smarthand.Model.UcapanModel;
 
-public class AbjadAdapter extends RecyclerView.Adapter<AbjadAdapter.ViewHolder> {
+public class UcapanAdapter extends RecyclerView.Adapter<UcapanAdapter.ViewHolder> {
 
     Context context;
-    ArrayList<AbjadModel> arrayList;
+    ArrayList<UcapanModel> arrayList;
 
-    public AbjadAdapter(Context context, ArrayList<AbjadModel> arrayList) {
+    public UcapanAdapter(Context context, ArrayList<UcapanModel> arrayList) {
         this.context = context;
         this.arrayList = arrayList;
     }
@@ -32,8 +32,8 @@ public class AbjadAdapter extends RecyclerView.Adapter<AbjadAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
-        final AbjadModel models = arrayList.get(i);
-        viewHolder.imageView.setImageDrawable(context.getDrawable(models.getImageAbjad()));
+        final UcapanModel models = arrayList.get(i);
+        viewHolder.imageView.setImageDrawable(context.getDrawable(models.getImageUcapan()));
 
         viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +41,7 @@ public class AbjadAdapter extends RecyclerView.Adapter<AbjadAdapter.ViewHolder> 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 View view = LayoutInflater.from(context).inflate(R.layout.abjadpopup, null);
                 ImageView imageView = view.findViewById(R.id.imagepopup);
-                imageView.setImageDrawable(context.getDrawable(models.getImageJari()));
+                imageView.setImageDrawable(context.getDrawable(models.getImageUcapan1()));
 
                 builder.setView(view);
 
@@ -61,7 +61,7 @@ public class AbjadAdapter extends RecyclerView.Adapter<AbjadAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imgabjad);
+            imageView = itemView.findViewById(R.id.imgucapan);
         }
     }
 }
