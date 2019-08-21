@@ -4,16 +4,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import java.util.ArrayList;
-
-import jurgenirgo.example.smarthand.Model.AbjadModel;
 import jurgenirgo.example.smarthand.Model.UcapanModel;
 
 public class UcapanActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

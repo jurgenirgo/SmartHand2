@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         ucapan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int1 =new Intent(MainActivity.this, PerasaanActivity.class);
+                Intent int1 =new Intent(MainActivity.this, UcapanActivity.class);
                 startActivity(int1);
             }
         });
