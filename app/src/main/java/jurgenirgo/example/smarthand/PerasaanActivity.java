@@ -28,7 +28,7 @@ public class PerasaanActivity extends AppCompatActivity {
     public ArrayList<PerasaanModel> getdata() {
         ArrayList<PerasaanModel> list = new ArrayList<>();
 
-        int[] abjad = {
+        int[] perasaan = {
                 R.drawable.takut,
                 R.drawable.senang,
                 R.drawable.sedih,
@@ -51,9 +51,9 @@ public class PerasaanActivity extends AppCompatActivity {
         };
 
 
-        for (int i = 0; i < abjad.length; i++) {
+        for (int i = 0; i < perasaan.length; i++) {
             list.add(new PerasaanModel(
-                    abjad[i],
+                    perasaan[i],
                     jari[i]
             ));
         }

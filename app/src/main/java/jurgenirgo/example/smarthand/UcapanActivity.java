@@ -24,7 +24,7 @@ public class UcapanActivity extends AppCompatActivity {
     public ArrayList<UcapanModel> getdata() {
         ArrayList<UcapanModel> list = new ArrayList<>();
 
-        int[] abjad = {
+        int[] ucapan = {
                 R.drawable.halo,
                 R.drawable.maaf,
                 R.drawable.samasama,
@@ -41,9 +41,9 @@ public class UcapanActivity extends AppCompatActivity {
         };
 
 
-        for (int i = 0; i < abjad.length; i++) {
+        for (int i = 0; i < ucapan.length; i++) {
             list.add(new UcapanModel(
-                    abjad[i],
+                    ucapan[i],
                     jari[i]
             ));
         }

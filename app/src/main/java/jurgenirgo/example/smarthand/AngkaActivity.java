@@ -28,7 +28,7 @@ public class AngkaActivity extends AppCompatActivity {
     public ArrayList<AngkaModel> getdata() {
         ArrayList<AngkaModel> list = new ArrayList<>();
 
-        int[] abjad = {
+        int[] angka = {
                 R.drawable.satuangka,
                 R.drawable.duaangka,
                 R.drawable.tigaangka,
@@ -54,9 +54,9 @@ public class AngkaActivity extends AppCompatActivity {
                 R.drawable.sepuluh,
         };
 
-        for (int i = 0; i < abjad.length; i++) {
+        for (int i = 0; i < angka.length; i++) {
             list.add(new AngkaModel(
-                    abjad[i],
+                    angka[i],
                     jari[i]
             ));
         }
