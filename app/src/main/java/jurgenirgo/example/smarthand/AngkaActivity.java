@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import java.util.ArrayList;
 
 import jurgenirgo.example.smarthand.Model.AbjadModel;
+import jurgenirgo.example.smarthand.Model.AngkaModel;
 
 public class AngkaActivity extends AppCompatActivity {
 
@@ -16,16 +17,16 @@ public class AngkaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_abjad);
+        setContentView(R.layout.activity_angka);
 
         recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        recyclerView.setAdapter(new AbjadAdapter(this, getdata()));
+        recyclerView.setAdapter(new AngkaAdapter(this, getdata()));
     }
 
-    public ArrayList<AbjadModel> getdata() {
-        ArrayList<AbjadModel> list = new ArrayList<>();
+    public ArrayList<AngkaModel> getdata() {
+        ArrayList<AngkaModel> list = new ArrayList<>();
 
         int[] abjad = {
                 R.drawable.satuangka,
@@ -54,7 +55,7 @@ public class AngkaActivity extends AppCompatActivity {
         };
 
         for (int i = 0; i < abjad.length; i++) {
-            list.add(new AbjadModel(
+            list.add(new AngkaModel(
                     abjad[i],
                     jari[i]
             ));
