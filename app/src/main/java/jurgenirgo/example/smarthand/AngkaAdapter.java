@@ -61,7 +61,7 @@ public class AngkaAdapter extends RecyclerView.Adapter<AngkaAdapter.ViewHolder> 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imgabjad);
+            imageView = itemView.findViewById(R.id.imgangka);
         }
     }
 }
