@@ -1,10 +1,10 @@
 package jurgenirgo.example.smarthand.Model;
 
-public class AngkaMOdel {
+public class AngkaModel {
 
     int imageAngka, imageJariAngka;
 
-    public AngkaMOdel(int imageAngka, int imageJariAngka) {
+    public AngkaModel(int imageAngka, int imageJariAngka) {
         this.imageAngka = imageAngka;
         this.imageJariAngka = imageJariAngka;
     }
