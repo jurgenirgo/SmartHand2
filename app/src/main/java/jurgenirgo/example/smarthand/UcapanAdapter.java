@@ -26,7 +26,7 @@ public class UcapanAdapter extends RecyclerView.Adapter<UcapanAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.abjaditem, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.ucapanitem, viewGroup, false);
         return new ViewHolder(view);
     }
 
