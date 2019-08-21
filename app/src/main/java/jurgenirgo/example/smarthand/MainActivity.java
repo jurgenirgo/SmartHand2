@@ -26,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(int1);
             }
         });
+
+        angka.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int1 =new Intent(MainActivity.this, AngkaActivity.class);
+                startActivity(int1);
+            }
+        });
     }
 }
