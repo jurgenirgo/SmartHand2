@@ -39,7 +39,7 @@ public class AngkaAdapter extends RecyclerView.Adapter<AngkaAdapter.ViewHolder> 
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                View view = LayoutInflater.from(context).inflate(R.layout.abjadpopup, null);
+                View view = LayoutInflater.from(context).inflate(R.layout.angkapopup, null);
                 ImageView imageView = view.findViewById(R.id.imagepopup);
                 imageView.setImageDrawable(context.getDrawable(models.getImageJariAngka()));
 
