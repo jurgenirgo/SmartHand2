@@ -1,11 +1,12 @@
 package jurgenirgo.example.smarthand;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -57,5 +58,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(int1);
             }
         });
+    }
+
+    private boolean exit = false;
+
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            Intent intent = new Intent(MainActivity.this, Splash.class);
+            intent.putExtra("exit", "exit");
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+        } else {
+            Toast.makeText(this, "Press Back Again to Exit", Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+        }
     }
 }

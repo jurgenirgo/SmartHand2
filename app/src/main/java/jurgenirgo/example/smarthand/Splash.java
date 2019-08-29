@@ -21,10 +21,19 @@ public class Splash extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume(){
-    super.onResume();
-    if (("exit").equalsIgnoreCase(getIntent().getStringExtra(("exit")))){
-        onBackPressed();
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        if (intent.hasExtra("exit")) {
+            setIntent(intent);
+        }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (getIntent() != null) {
+            if (("exit").equalsIgnoreCase(getIntent().getStringExtra(("exit")))) {
+                onBackPressed();
+            }
         }
     }
 }
