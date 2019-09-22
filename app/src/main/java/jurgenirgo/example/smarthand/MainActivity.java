@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView angka = (ImageView) findViewById(R.id.btnAngka);
         ImageView perasaan = (ImageView) findViewById(R.id.btnPerasaan);
         ImageView ucapan = (ImageView) findViewById(R.id.btnUcapan);
+        ImageView video = (ImageView) findViewById(R.id.btn_Video);
         ImageView profil = (ImageView) findViewById(R.id.profil);
 
         abjad.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent int1 =new Intent(MainActivity.this, ProfilActivity.class);
+                startActivity(int1);
+            }
+        });
+        video.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int1 =new Intent(MainActivity.this, VideoActivity.class);
                 startActivity(int1);
             }
         });
