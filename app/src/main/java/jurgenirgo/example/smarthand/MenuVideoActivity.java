@@ -3,11 +3,11 @@ package jurgenirgo.example.smarthand;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class VideoActivity extends AppCompatActivity {
+public class MenuVideoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video);
+        setContentView(R.layout.activity_menu_video);
     }
 }
