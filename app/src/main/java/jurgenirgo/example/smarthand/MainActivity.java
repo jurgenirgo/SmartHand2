@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         video.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent int1 =new Intent(MainActivity.this, MainActivity.class);
+                Intent int1 =new Intent(MainActivity.this, MenuVideoActivity.class);
                 startActivity(int1);
             }
         });

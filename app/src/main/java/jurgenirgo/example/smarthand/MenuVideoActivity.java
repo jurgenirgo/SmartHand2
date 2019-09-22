@@ -23,6 +23,12 @@ public class MenuVideoActivity extends AppCompatActivity {
                 startActivity(int1);
             }
         });
-
+        video2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent int1 =new Intent(MenuVideoActivity.this, Video2Activity.class);
+                startActivity(int1);
+            }
+        });
     }
 }
